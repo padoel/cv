@@ -2,10 +2,10 @@ const video = document.getElementById('video');
 const canvas = document.getElementById('canvas');
 // proses pemanggilan model
 Promise.all([
-	faceapi.nets.tinyFaceDetector.loadFromUri('/fd/models'),
-	faceapi.nets.faceLandmark68Net.loadFromUri('/fd/models'),
-	faceapi.nets.faceRecognitionNet.loadFromUri('/fd/models'),
-	faceapi.nets.faceExpressionNet.loadFromUri('/fd/models')
+	faceapi.nets.tinyFaceDetector.loadFromUri('/cv/models'),
+	faceapi.nets.faceLandmark68Net.loadFromUri('/cv/models'),
+	faceapi.nets.faceRecognitionNet.loadFromUri('/cv/models'),
+	faceapi.nets.faceExpressionNet.loadFromUri('/cv/models')
 ]).then(startWebcam);
 
 function startWebcam() {
